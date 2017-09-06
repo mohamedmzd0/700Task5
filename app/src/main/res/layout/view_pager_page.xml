@@ -1,0 +1,94 @@
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="@dimen/viewpager_H"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/background_image"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <ImageView
+        android:background="@drawable/ic_notification"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_margin="20dp"
+        android:layout_width="@dimen/menu_dim"
+        android:layout_height="@dimen/menu_dim"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:background="@drawable/badge"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:text="10"
+        android:textColor="@color/white"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+         />
+
+    <ImageView
+        android:background="@drawable/ic_stat_ic_user"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="@dimen/menu_dim"
+        android:layout_height="@dimen/menu_dim"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/texts2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="65dp"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/texts2"
+        android:layout_marginTop="85dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="June 17 2017"
+        android:textColor="@color/white"
+        android:textSize="@dimen/texts"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="120dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:text="going"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_one_background"
+        android:layout_gravity="bottom"
+
+ />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/white"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_two_background"
+        android:text="invite"/>
+
+
+</FrameLayout>

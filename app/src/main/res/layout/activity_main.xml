@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.mohamedabdelaziz.task5.MainActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_H" />
+    <LinearLayout
+        android:background="#008079"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:layout_width="0dp"
+            android:text="timeline"
+            android:background="@drawable/non_selected_btn"
+            android:textSize="@dimen/texts"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="0dp"
+            android:text="events"
+            android:background="@drawable/selected_btn"
+            android:textSize="@dimen/texts"
+            android:textColor="@color/white"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="0dp"
+            android:text="news"
+            android:background="@drawable/non_selected_btn"
+            android:textSize="@dimen/texts"
+            android:textColor="@color/white"
+            android:layout_weight=".7"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="0dp"
+            android:text="group members"
+            android:textSize="@dimen/texts"
+            android:background="@drawable/non_selected_btn"
+            android:textColor="@color/white"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+</ScrollView>

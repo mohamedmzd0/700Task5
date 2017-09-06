@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/fab_margin"
+    android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/public_event"
+            android:text="public event"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/selected_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/one_one_meeting"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:background="#555"
+            android:layout_toEndOf="@+id/public_event"
+            android:text="1-to-1-meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@+id/public_event"
+        android:layout_margin="2dp"
+        android:id="@+id/postContainer"
+        android:background="#5CCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/fab_margin"
+            android:id="@+id/head"
+            android:text="write heading to your Event , news or video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/head"
+            android:background="#8888"/>
+        <EditText
+            android:hint="short describtion about the post"
+            android:padding="@dimen/fab_margin"
+            android:textSize="12sp"
+            android:id="@+id/post"
+            android:layout_below="@id/head"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+            <ImageView
+                android:layout_below="@+id/post"
+                android:id="@+id/p1"
+                android:background="@drawable/ic_upload_image"
+                android:layout_margin="3dp"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="15dp"
+                android:layout_height="20dp" />
+        <TextView
+            android:layout_below="@+id/post"
+            android:layout_toEndOf="@+id/p1"
+            android:text="upload photo"
+            android:id="@+id/t1"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#008079"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/post"
+            android:id="@+id/p2"
+            android:background="@drawable/ic_location"
+            android:layout_toEndOf="@+id/t1"
+            android:layout_margin="3dp"
+            android:layout_width="15dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_below="@+id/post"
+            android:layout_toEndOf="@+id/p2"
+            android:text="location"
+            android:textColor="#008079"
+            android:id="@+id/t2"
+            android:textSize="10sp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/post"
+            android:id="@+id/p3"
+            android:background="@drawable/ic_select_date"
+            android:layout_toEndOf="@+id/t2"
+            android:layout_margin="3dp"
+            android:layout_width="15dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_below="@+id/post"
+            android:layout_toEndOf="@+id/p3"
+            android:text="select date"
+            android:textColor="#008079"
+            android:id="@+id/t3"
+            android:textSize="10sp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_below="@+id/post"
+            android:layout_alignParentEnd="true"
+            android:background="#008079"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/texts"
+            android:text="create event"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_below="@id/postContainer"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:background="#8888"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imagev"
+                android:background="@drawable/b1"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text1"
+                    android:textSize="10sp"
+                    android:text="comic con"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#FFF"
+                    android:padding="2dp"
+                    android:background="#008079"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/text2"
+                    android:padding="2dp"
+                    android:layout_toEndOf="@+id/text1"
+                    android:background="#f33"
+                    android:layout_width="5dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_below="@+id/text1"
+                    android:textSize="@dimen/texts"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:text="Essential Guide to Shopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_marginStart="3dp"
+                    android:textSize="@dimen/texts"
+                    android:text="with word-class malls that elevate the shopping"
+                    android:layout_below="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+                <ImageView
+                    android:layout_below="@+id/desc"
+                    android:layout_width="20dp"
+                    android:id="@+id/icon1"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/group"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_below="@+id/desc"
+                    android:layout_toEndOf="@+id/icon1"
+                    android:text="read more"
+                    android:id="@+id/tt1"
+                    android:layout_marginStart="3dp"
+                    android:textColor="#008079"
+                    android:textSize="@dimen/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:layout_below="@+id/desc"
+                    android:layout_width="20dp"
+                    android:id="@+id/icon2"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tt1"
+                    android:background="@drawable/share"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_below="@+id/desc"
+                    android:layout_toEndOf="@+id/icon2"
+                    android:text="share"
+                    android:textColor="#008079"
+                    android:layout_marginStart="3dp"
+                    android:textSize="@dimen/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_gravity="bottom"
+                android:background="@drawable/ic_more"
+                android:layout_width="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_below="@id/linear1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:background="#8888"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imagev2"
+                android:background="@drawable/b2"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text1"
+                    android:textSize="10sp"
+                    android:text="comic con"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#FFF"
+                    android:padding="2dp"
+                    android:background="#008079"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/text22"
+                    android:padding="2dp"
+                    android:layout_toEndOf="@+id/text1"
+                    android:background="#f33"
+                    android:layout_width="5dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_below="@+id/text1"
+                    android:textSize="@dimen/texts"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:text="middle east film and comic con 2017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/desc2"
+                    android:layout_marginStart="3dp"
+                    android:textSize="@dimen/texts"
+                    android:text="with word-class malls that elevate the shopping"
+                    android:layout_below="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:layout_below="@+id/desc2"
+                    android:layout_width="20dp"
+                    android:id="@+id/icon11"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/ic_select_date"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_below="@+id/desc2"
+                    android:layout_toEndOf="@+id/icon11"
+                    android:text="add to calender"
+                    android:id="@+id/tt11"
+                    android:layout_marginStart="3dp"
+                    android:textColor="#008079"
+                    android:textSize="@dimen/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:layout_below="@+id/desc2"
+                    android:layout_width="20dp"
+                    android:id="@+id/icon22"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tt11"
+                    android:background="@drawable/share"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_below="@+id/desc2"
+                    android:layout_toEndOf="@+id/icon22"
+                    android:text="share"
+                    android:textColor="#008079"
+                    android:layout_marginStart="3dp"
+                    android:textSize="@dimen/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_gravity="bottom"
+                android:background="@drawable/ic_more"
+                android:layout_width="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_below="@id/linear2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:background="#8888"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imagev3"
+                android:background="@drawable/b3"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text33"
+                    android:textSize="10sp"
+                    android:text="comic con"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#FFF"
+                    android:padding="2dp"
+                    android:background="#008079"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/text34"
+                    android:padding="2dp"
+                    android:layout_toEndOf="@+id/text33"
+                    android:background="#f33"
+                    android:layout_width="5dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_below="@+id/text33"
+                    android:textSize="@dimen/texts"
+                    android:textStyle="bold"
+                    android:layout_margin="3dp"
+                    android:text="the spirit of dubai video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/desc3"
+                    android:layout_marginStart="3dp"
+                    android:textSize="@dimen/texts"
+                    android:text="with word-class malls that elevate the shopping"
+                    android:layout_below="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+                <ImageButton
+                    android:layout_below="@+id/desc3"
+                    android:layout_width="20dp"
+                    android:id="@+id/icon33"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/like"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_below="@+id/desc3"
+                    android:layout_toEndOf="@+id/icon33"
+                    android:text="like"
+                    android:id="@+id/tt33"
+                    android:layout_marginStart="3dp"
+                    android:textColor="#008079"
+                    android:textSize="@dimen/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:layout_below="@+id/desc3"
+                    android:layout_width="20dp"
+                    android:id="@+id/icon3"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tt33"
+                    android:background="@drawable/comment"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_below="@+id/desc3"
+                    android:layout_toEndOf="@+id/icon3"
+                    android:text="commment"
+                    android:textColor="#008079"
+                    android:layout_marginStart="3dp"
+                    android:textSize="@dimen/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_gravity="bottom"
+                android:background="@drawable/ic_more"
+                android:layout_width="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
